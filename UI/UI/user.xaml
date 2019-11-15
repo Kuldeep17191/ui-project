@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UI.user">
+    <StackLayout Orientation="Vertical" Padding="50" Spacing="40">
+        <BoxView HeightRequest="20"/>
+
+
+        <Entry x:Name="EnterPassword" Text="{Binding Password}" Placeholder="Enter Your Password"   
+                           PlaceholderColor="Gray" HeightRequest="40" IsPassword="True" TextColor="Black"/>
+
+       
+        <Button Text="OK" TextColor="Black" Clicked="ok_clicked" FontAttributes="Bold" FontSize="Large" 
+                HorizontalOptions="FillAndExpand"  />
+
+    </StackLayout>
+
+
+
+
+
+</ContentPage>

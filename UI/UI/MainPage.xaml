@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UI"
+             x:Class="UI.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+
+        <StackLayout  BackgroundColor="White">
+            <Image Source="Assets/title.png" Aspect="AspectFill"/>
+
+            <Entry x:Name="Studentid" Grid.Row="1" Placeholder="Enter Your Student id"></Entry>
+            <Button x:Name="Login" Text="Login" Grid.Row="2" TextColor="Black" Clicked="Login_clicked" FontAttributes="Bold" FontSize="Large" BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"  />
+
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
